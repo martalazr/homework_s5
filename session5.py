@@ -10,13 +10,13 @@ else:
         tax = 0.1 * gross
     elif gross < 2000:
         tax = 0.12 * gross
-        tax_cut = 0.01 * children * gross
+        tax_cut = 0.01 * gross * children
     elif gross < 4000:
         tax = 0.14 * gross
-        tax_cut = 0.01 * children * gross
+        tax_cut = 0.01 * gross * children
     else:
         tax = 0.18 * gross
-        tax_cut = 0.005 * children * gross
+        tax_cut = 0.005 * gross * children
 
 
 net = gross + tax_cut - tax
