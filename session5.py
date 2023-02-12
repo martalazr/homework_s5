@@ -20,5 +20,5 @@ else:
 
 
 net = gross + tax_cut - tax
-print("The net salary is:", net)
+print("Your net salary is ", net)
 
